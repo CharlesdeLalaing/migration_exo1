@@ -31,3 +31,29 @@ class CreateArticlesTable extends Migration
         Schema::dropIfExists('articles');
     }
 }
+
+
+
+"dans l'ordre:
+
+supprimez les models, controllers et migrations debase
+
+1)
+php artisan make:migration create_photos_table -> créer juste la table pas besoin de modal ou controllers
+dans les migrations: 
+ajouter les $table: string('nom', 30); string('path',50);
+
+terminal: php artisan migrate
+
+2)
+php artisan make:migration create_students_table
+dans les migration:
+ajouter les $table: string('nom', 50); string('prenom',50); string('email',50); string('address', 200); date('date de naissance'); ipAddress('addresse_ip');
+
+3)
+php artisan make:migration create_students_table
+dans les migration:
+ajouter les $table: string('nom',100); longText('text', 200); float('number');
+
+
+";

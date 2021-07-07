@@ -16,12 +16,14 @@ Créer une table article. Cette table aura comme propriété suivante: - un id q
 
 
 
-        créer la db sur phpmyadmin
+        créer la db sur phpmyadmin sans tables 
+
         connecter la db et le dossier dans le ficher env.
 
         (check ce qu'il faut mettre à la création)
 
-        supprimez les trois migrations de bases.
+        supprimez les trois migrations/models/cpntroller de bases.
+
         php artisan make:model Member -cm (création de model, controller et table)
         dans la migration, je peux rajouter des tables
 
